@@ -4,7 +4,6 @@ import styles from './Buttons.module.css';
 
 class Buttons extends Component {
     static propTypes = {
-        state: PropTypes.object.isRequired,
         addFeedback: PropTypes.func.isRequired,
     }
 
