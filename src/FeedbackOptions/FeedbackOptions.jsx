@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Buttons.module.css';
+import styles from './FeedbackOptions.module.css';
 
-class Buttons extends Component {
+class FeedbackOptions extends Component {
     static propTypes = {
         addFeedback: PropTypes.func.isRequired,
     }
@@ -20,4 +20,4 @@ class Buttons extends Component {
     };
 };
 
-export default Buttons;
+export default FeedbackOptions;

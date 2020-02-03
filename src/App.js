@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Buttons from './Buttons/Buttons';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Statistics from './Statistics/Statistics';
 import NoFeedbackGiven from './NoFeedbackGiven/NoFeedbackGiven';
 
@@ -45,7 +45,7 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     return <>
       <h1> Please Leave Feedback </h1>
-      <Buttons addFeedback={this.addFeedback} />
+      <FeedbackOptions addFeedback={this.addFeedback} />
       <Statistics good={good} neutral={neutral} bad={bad} totalFeedbacks={this.countTotalFeedback()} />
       <NoFeedbackGiven feedbackInfo={this.countPositiveFeedbackPercentage} />
     </>
